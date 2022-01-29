@@ -5,9 +5,9 @@
 
     <servers>
         <server>
-            <id>reposilite-repository</id>
-            <username>user1</username>
-            <password>secret1</password>
+            <id>nexus-repository</id>
+            <username>admin</username>
+            <password>admin123</password>
         </server>
     </servers>
 
