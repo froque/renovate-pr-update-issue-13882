@@ -4,19 +4,14 @@ docker run --rm -d -p 8081:8081 --name nexus sonatype/nexus:oss
 # admin:admin123
 #http://localhost:8082/nexus/#welcome
 
-GITLAB_TOKEN="xxx"
-GITLAB_ADDRESS_DNS="gitlab.example.com"
-GITLAB_ADDRESS_IP="192.0.2.0"
+GITHUB_COM_TOKEN=""
 
 function run_renovate {
   docker run --rm \
       -e LOG_LEVEL=debug \
       --link=nexus \
-       --add-host="${GITLAB_ADDRESS_DNS}:${GITLAB_ADDRESS_IP}" \
       renovate/renovate:latest \
-        --platform=gitlab \
-        --token=${GITLAB_TOKEN} \
-        --endpoint="https://${GITLAB_ADDRESS_DNS}/api/v4/" \
+        --token=${GITHUB_COM_TOKEN} \
         froque/renovate-pr-update-issue-13882
 }
 
@@ -48,18 +43,19 @@ function change_deployed_timestamp {
     sh -c 'touch -d "'${days}' days ago" /sonatype-work/storage/releases/com/premiumminds/test/renovate-pr-update-issue-13882-lib/'${version}'/*'
 }
 
-# deploy lib 1.0
+# lib 1.0
 deploy_lib
 change_deployed_timestamp 1.0 10
-run_renovate
+run_renovate > run_renovate_1.0.txt
 
 # change lib to 1.1
 bump_version_lib 1.1
 deploy_lib
 change_deployed_timestamp 1.1 5
-run_renovate
+run_renovate > run_renovate_1.1.txt
 
 # change lib to 1.2
 bump_version_lib 1.2
 deploy_lib
-run_renovate
+change_deployed_timestamp 1.2 1
+run_renovate > run_renovate_1.2.txt

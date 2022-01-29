@@ -1,0 +1,350 @@
+DEBUG: Using RE2 as regex engine
+DEBUG: Parsing configs
+DEBUG: Checking for config file in /usr/src/app/config
+DEBUG: No config file found on disk - skipping
+DEBUG: File config
+       "config": {}
+DEBUG: CLI config
+       "config": {
+         "repositories": ["froque/renovate-pr-update-issue-13882"],
+         "token": "***********"
+       }
+DEBUG: Env config
+       "config": {"hostRules": []}
+DEBUG: Combined config
+       "config": {
+         "hostRules": [],
+         "repositories": ["froque/renovate-pr-update-issue-13882"],
+         "token": "***********"
+       }
+DEBUG: Using default github endpoint: https://api.github.com/
+DEBUG: GitHub 404
+       "url": "https://api.github.com/user/emails"
+DEBUG: Cannot read user/emails endpoint on GitHub to retrieve gitAuthor
+DEBUG: Platform config
+       "platformConfig": {"hostType": "github", "endpoint": "https://api.github.com/", "isGhe": false},
+       "renovateUsername": "froque"
+DEBUG: Adding token authentication for api.github.com to hostRules
+DEBUG: Using baseDir: /tmp/renovate
+DEBUG: Using cacheDir: /tmp/renovate/cache
+DEBUG: Initializing Renovate internal cache into /tmp/renovate/cache/renovate/renovate-cache-v1
+DEBUG: Commits limit = null
+DEBUG: Clearing hostRules
+DEBUG: Adding token authentication for api.github.com to hostRules
+ INFO: Repository started (repository=froque/renovate-pr-update-issue-13882)
+       "renovateVersion": "28.24.0"
+DEBUG: Using localDir: /tmp/renovate/repos/github/froque/renovate-pr-update-issue-13882 (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: initRepo("froque/renovate-pr-update-issue-13882") (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Overriding default GitHub endpoint (repository=froque/renovate-pr-update-issue-13882)
+       "endpoint": "https://api.github.com/"
+DEBUG: froque/renovate-pr-update-issue-13882 default branch = master (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using personal access token for git init (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: resetMemCache() (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Resetting npmrc (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: detectSemanticCommits() (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Initializing git repository into /tmp/renovate/repos/github/froque/renovate-pr-update-issue-13882 (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Performing blobless clone (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: git clone completed (repository=froque/renovate-pr-update-issue-13882)
+       "durationMs": 1462
+DEBUG: latest repository commit (repository=froque/renovate-pr-update-issue-13882)
+       "latestCommit": {
+         "hash": "5b1006da3b2a98762bedf7b7d94aa722a76d9b08",
+         "date": "2022-01-29T00:40:03+00:00",
+         "message": "move from reposilite to nexus",
+         "refs": "HEAD -> master, origin/master, origin/HEAD",
+         "body": "",
+         "author_name": "Filipe Roque",
+         "author_email": "froque@premium-minds.com"
+       }
+DEBUG: getCommitMessages (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Semantic commits detection: unknown (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: No semantic commits detected (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: checkOnboarding() (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: isOnboarded() (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: findFile(renovate.json) (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Config file exists (repository=froque/renovate-pr-update-issue-13882)
+       "fileName": "renovate.json"
+DEBUG: Retrieving issueList (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Retrieved 0 issues (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Repo is onboarded (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Found renovate.json config file (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Repository config (repository=froque/renovate-pr-update-issue-13882)
+       "fileName": "renovate.json",
+       "config": {
+         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+         "stabilityDays": 3,
+         "prCreation": "not-pending"
+       }
+DEBUG: migrateAndValidate() (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: No config migration necessary (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: massaged config (repository=froque/renovate-pr-update-issue-13882)
+       "config": {
+         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+         "stabilityDays": 3,
+         "prCreation": "not-pending"
+       }
+DEBUG: migrated config (repository=froque/renovate-pr-update-issue-13882)
+       "config": {
+         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+         "stabilityDays": 3,
+         "prCreation": "not-pending"
+       }
+DEBUG: Found repo ignorePaths (repository=froque/renovate-pr-update-issue-13882)
+       "ignorePaths": ["**/node_modules/**", "**/bower_components/**"]
+DEBUG: No vulnerability alerts found (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: No vulnerability alerts found (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: No baseBranches (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: extract() (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Setting current branch to master (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: latest commit (repository=froque/renovate-pr-update-issue-13882)
+       "branchName": "master",
+       "latestCommitDate": "2022-01-29T00:40:03+00:00"
+DEBUG: Using file match: (^|/)tasks/[^/]+\.ya?ml$ for manager ansible (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/)requirements\.ya?ml$ for manager ansible-galaxy (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/)galaxy\.ya?ml$ for manager ansible-galaxy (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: azure.*pipelines?.*\.ya?ml$ for manager azure-pipelines (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/)batect(-bundle)?\.yml$ for manager batect (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/)batect$ for manager batect-wrapper (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/)WORKSPACE(|\.bazel)$ for manager bazel (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: \.bzl$ for manager bazel (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/)\.?bitbucket-pipelines\.ya?ml$ for manager bitbucket-pipelines (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: buildkite\.ya?ml for manager buildkite (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: \.buildkite/.+\.ya?ml$ for manager buildkite (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/)Gemfile$ for manager bundler (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: \.cake$ for manager cake (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/)Cargo.toml$ for manager cargo (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/).circleci/config.yml$ for manager circleci (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/)cloudbuild.ya?ml for manager cloudbuild (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/)Podfile$ for manager cocoapods (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/)([\w-]*)composer.json$ for manager composer (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/)deps\.edn$ for manager deps-edn (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/)docker-compose[^/]*\.ya?ml$ for manager docker-compose (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/|\.)Dockerfile$ for manager dockerfile (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/)Dockerfile\.[^/]*$ for manager dockerfile (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/).drone.yml$ for manager droneci (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/).gitmodules$ for manager git-submodules (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: ^(workflow-templates|\.github\/workflows)\/[^/]+\.ya?ml$ for manager github-actions (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|\/)action\.ya?ml$ for manager github-actions (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: \.gitlab-ci\.yml$ for manager gitlabci (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: \.gitlab-ci\.yml$ for manager gitlabci-include (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/)go.mod$ for manager gomod (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: \.gradle(\.kts)?$ for manager gradle (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|\/)gradle\.properties$ for manager gradle (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|\/)gradle\/.+\.toml$ for manager gradle (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: \.versions\.toml$ for manager gradle (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/)gradle/wrapper/gradle-wrapper.properties$ for manager gradle-wrapper (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/)requirements\.yaml$ for manager helm-requirements (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/)values.yaml$ for manager helm-values (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/)helmfile.yaml$ for manager helmfile (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/)Chart.yaml$ for manager helmv3 (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: ^Formula/[^/]+[.]rb$ for manager homebrew (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: \.html?$ for manager html (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/)plugins\.(txt|ya?ml)$ for manager jenkins (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/)kustomization\.yaml for manager kustomize (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/)project\.clj$ for manager leiningen (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: \.pom\.xml$ for manager maven (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/)pom\.xml$ for manager maven (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/)package.js$ for manager meteor (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/)mix\.exs$ for manager mix (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/).node-version$ for manager nodenv (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/)package.json$ for manager npm (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: \.(?:cs|fs|vb)proj$ for manager nuget (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: \.(?:props|targets)$ for manager nuget (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: \.config\/dotnet-tools\.json$ for manager nuget (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|//)global\.json$ for manager nuget (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/)\.nvmrc$ for manager nvm (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/)([\w-]*)requirements\.(txt|pip)$ for manager pip_requirements (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/)setup.py$ for manager pip_setup (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/)Pipfile$ for manager pipenv (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/)pyproject\.toml$ for manager poetry (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/)\.pre-commit-config\.yaml$ for manager pre-commit (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/)pubspec\.ya?ml$ for manager pub (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/).python-version$ for manager pyenv (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/)\.ruby-version$ for manager ruby-version (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: \.sbt$ for manager sbt (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: project/[^/]*.scala$ for manager sbt (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/)setup\.cfg$ for manager setup-cfg (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/)Package\.swift for manager swift (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: \.tf$ for manager terraform (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/)\.terraform-version$ for manager terraform-version (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/)terragrunt\.hcl$ for manager terragrunt (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: (^|/)\.terragrunt-version$ for manager terragrunt-version (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Using file match: ^.travis.yml$ for manager travis (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Matched 2 file(s) for manager maven: app/pom.xml, lib/pom.xml (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Found maven package files (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Found 2 package file(s) (repository=froque/renovate-pr-update-issue-13882)
+ INFO: Dependency extraction complete (repository=froque/renovate-pr-update-issue-13882)
+       "baseBranch": "master",
+       "stats": {
+         "managers": {"maven": {"fileCount": 2, "depCount": 1}},
+         "total": {"fileCount": 2, "depCount": 1}
+       }
+DEBUG: Looking up com.premiumminds.test:renovate-pr-update-issue-13882-lib in repository https://repo.maven.apache.org/maven2/ (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Content is not found for Maven url (repository=froque/renovate-pr-update-issue-13882)
+       "url": "https://repo.maven.apache.org/maven2/com/premiumminds/test/renovate-pr-update-issue-13882-lib/maven-metadata.xml",
+       "statusCode": undefined
+DEBUG: Looking up com.premiumminds.test:renovate-pr-update-issue-13882-lib in repository http://nexus:8081/nexus/content/repositories/releases/ (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Found 3 new releases for com.premiumminds.test:renovate-pr-update-issue-13882-lib in repository http://nexus:8081/nexus/content/repositories/releases/ (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Package releases lookups complete (repository=froque/renovate-pr-update-issue-13882)
+       "baseBranch": "master"
+DEBUG: branchifyUpgrades (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: 1 flattened updates found: com.premiumminds.test:renovate-pr-update-issue-13882-lib (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Returning 1 branch(es) (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: config.repoIsOnboarded=true (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: packageFiles with updates (repository=froque/renovate-pr-update-issue-13882)
+       "config": {
+         "maven": [
+           {
+             "datasource": "maven",
+             "packageFile": "app/pom.xml",
+             "deps": [
+               {
+                 "datasource": "maven",
+                 "depName": "com.premiumminds.test:renovate-pr-update-issue-13882-lib",
+                 "currentValue": "1.0",
+                 "fileReplacePosition": 790,
+                 "registryUrls": [
+                   "https://repo.maven.apache.org/maven2",
+                   "http://nexus:8081/nexus/content/repositories/releases"
+                 ],
+                 "depIndex": 0,
+                 "updates": [
+                   {
+                     "bucket": "non-major",
+                     "newVersion": "1.2",
+                     "newValue": "1.2",
+                     "releaseTimestamp": "2022-01-28T01:40:30.000Z",
+                     "newMajor": 1,
+                     "newMinor": 2,
+                     "updateType": "minor",
+                     "branchName": "renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x"
+                   }
+                 ],
+                 "warnings": [],
+                 "versioning": "maven",
+                 "currentVersion": "1.0",
+                 "isSingleVersion": true,
+                 "fixedVersion": "1.0"
+               }
+             ]
+           },
+           {"datasource": "maven", "packageFile": "lib/pom.xml", "deps": []}
+         ]
+       }
+DEBUG: processRepo() (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Processing 1 branch: renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Calculated maximum PRs remaining this run (repository=froque/renovate-pr-update-issue-13882)
+       "prsRemaining": 99
+DEBUG: PullRequests limit = 99 (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Calculated maximum branches remaining this run (repository=froque/renovate-pr-update-issue-13882)
+       "branchesRemaining": 99
+DEBUG: Branches limit = 99 (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Setting current branch to master (repository=froque/renovate-pr-update-issue-13882, branch=renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x)
+DEBUG: latest commit (repository=froque/renovate-pr-update-issue-13882, branch=renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x)
+       "branchName": "master",
+       "latestCommitDate": "2022-01-29T00:40:03+00:00"
+DEBUG: getBranchPr(renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x) (repository=froque/renovate-pr-update-issue-13882, branch=renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x)
+DEBUG: findPr(renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x, undefined, open) (repository=froque/renovate-pr-update-issue-13882, branch=renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x)
+DEBUG: Retrieving PR list (repository=froque/renovate-pr-update-issue-13882, branch=renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x)
+DEBUG: Retrieved 1 Pull Requests (repository=froque/renovate-pr-update-issue-13882, branch=renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x)
+DEBUG: Found PR #1 (repository=froque/renovate-pr-update-issue-13882, branch=renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x)
+DEBUG: Returning from graphql open PR list (repository=froque/renovate-pr-update-issue-13882, branch=renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x)
+DEBUG: branchExists=true (repository=froque/renovate-pr-update-issue-13882, branch=renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x)
+DEBUG: dependencyDashboardCheck=undefined (repository=froque/renovate-pr-update-issue-13882, branch=renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x)
+DEBUG: PR rebase requested=false (repository=froque/renovate-pr-update-issue-13882, branch=renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x)
+DEBUG: Checking if PR has been edited (repository=froque/renovate-pr-update-issue-13882, branch=renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x)
+DEBUG: Found existing branch PR (repository=froque/renovate-pr-update-issue-13882, branch=renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x)
+DEBUG: Checking schedule(at any time, null) (repository=froque/renovate-pr-update-issue-13882, branch=renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x)
+DEBUG: No schedule defined (repository=froque/renovate-pr-update-issue-13882, branch=renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x)
+DEBUG: Update has not passed stability days (repository=froque/renovate-pr-update-issue-13882, branch=renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x)
+       "depName": "com.premiumminds.test:renovate-pr-update-issue-13882-lib",
+       "daysElapsed": 1,
+       "stabilityDays": 3
+DEBUG: Branch already exists (repository=froque/renovate-pr-update-issue-13882, branch=renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x)
+DEBUG: GitHub 404 (repository=froque/renovate-pr-update-issue-13882, branch=renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x)
+       "url": "repos/froque/renovate-pr-update-issue-13882/branches/master/protection"
+DEBUG: No branch protection found (repository=froque/renovate-pr-update-issue-13882, branch=renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x)
+DEBUG: Skipping stale branch check due to rebaseWhen=auto (repository=froque/renovate-pr-update-issue-13882, branch=renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x)
+DEBUG: Branch does not need rebasing (repository=froque/renovate-pr-update-issue-13882, branch=renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x)
+DEBUG: Using reuseExistingBranch: true (repository=froque/renovate-pr-update-issue-13882, branch=renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x)
+DEBUG: manager.getUpdatedPackageFiles() reuseExistinbranch=true (repository=froque/renovate-pr-update-issue-13882, branch=renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x)
+DEBUG: Unknown value (repository=froque/renovate-pr-update-issue-13882, branch=renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x)
+       "depName": "com.premiumminds.test:renovate-pr-update-issue-13882-lib",
+       "version": "1.1",
+       "currentValue": "1.0",
+       "newValue": "1.2"
+DEBUG: Rebasing branch after error updating content (repository=froque/renovate-pr-update-issue-13882, packageFile=app/pom.xml, branch=renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x)
+       "depName": "com.premiumminds.test:renovate-pr-update-issue-13882-lib"
+DEBUG: manager.getUpdatedPackageFiles() reuseExistinbranch=false (repository=froque/renovate-pr-update-issue-13882, branch=renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x)
+DEBUG: Updating com.premiumminds.test:renovate-pr-update-issue-13882-lib in app/pom.xml (repository=froque/renovate-pr-update-issue-13882, branch=renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x)
+DEBUG: Updated 1 package files (repository=froque/renovate-pr-update-issue-13882, branch=renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x)
+DEBUG: No updated lock files in branch (repository=froque/renovate-pr-update-issue-13882, branch=renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x)
+DEBUG: 1 file(s) to commit (repository=froque/renovate-pr-update-issue-13882, branch=renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x)
+DEBUG: Committing files to branch renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x (repository=froque/renovate-pr-update-issue-13882, branch=renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x)
+DEBUG: Setting git author name (repository=froque/renovate-pr-update-issue-13882, branch=renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x)
+       "gitAuthorName": "Renovate Bot"
+DEBUG: Setting git author email (repository=froque/renovate-pr-update-issue-13882, branch=renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x)
+       "gitAuthorEmail": "renovate@whitesourcesoftware.com"
+DEBUG: git commit (repository=froque/renovate-pr-update-issue-13882, branch=renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x)
+       "deletedFiles": [],
+       "ignoredFiles": [],
+       "result": {
+         "author": null,
+         "branch": "renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x",
+         "commit": "0679498",
+         "root": false,
+         "summary": {"changes": 1, "insertions": 1, "deletions": 1}
+       }
+DEBUG: git push (repository=froque/renovate-pr-update-issue-13882, branch=renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x)
+       "result": {
+         "pushed": [],
+         "branch": {
+           "local": "renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x",
+           "remote": "renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x",
+           "remoteName": "origin"
+         },
+         "ref": {
+           "local": "refs/remotes/origin/renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x"
+         },
+         "remoteMessages": {"all": []}
+       }
+ INFO: Branch updated (repository=froque/renovate-pr-update-issue-13882, branch=renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x)
+       "commitSha": "0679498"
+DEBUG: Updating renovate/stability-days status check state to yellow (repository=froque/renovate-pr-update-issue-13882, branch=renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x)
+DEBUG: Setting branch status (repository=froque/renovate-pr-update-issue-13882, branch=renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x)
+       "context": "renovate/stability-days",
+       "state": "yellow"
+DEBUG: Branch status pending (repository=froque/renovate-pr-update-issue-13882, branch=renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x)
+       "commitSha": "0679498"
+DEBUG: Closing Dependency Dashboard (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Removing any stale branches (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: config.repoIsOnboarded=true (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Branch lists (repository=froque/renovate-pr-update-issue-13882)
+       "branchList": ["renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x"],
+       "renovateBranches": ["renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x"]
+DEBUG: remainingBranches= (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: No branches to clean up (repository=froque/renovate-pr-update-issue-13882)
+DEBUG: Repository timing splits (milliseconds) (repository=froque/renovate-pr-update-issue-13882)
+       "splits": {"init": 3436, "extract": 234, "lookup": 223, "update": 5399},
+       "total": 9313
+DEBUG: http statistics (repository=froque/renovate-pr-update-issue-13882)
+       "urls": {
+         "http://nexus:8081/nexus/content/repositories/releases/com/premiumminds/test/renovate-pr-update-issue-13882-lib/1.0/renovate-pr-update-issue-13882-lib-1.0.pom (HEAD)": 1,
+         "http://nexus:8081/nexus/content/repositories/releases/com/premiumminds/test/renovate-pr-update-issue-13882-lib/1.1/renovate-pr-update-issue-13882-lib-1.1.pom (HEAD)": 1,
+         "http://nexus:8081/nexus/content/repositories/releases/com/premiumminds/test/renovate-pr-update-issue-13882-lib/1.2/renovate-pr-update-issue-13882-lib-1.2.pom (GET)": 1,
+         "http://nexus:8081/nexus/content/repositories/releases/com/premiumminds/test/renovate-pr-update-issue-13882-lib/1.2/renovate-pr-update-issue-13882-lib-1.2.pom (HEAD)": 1,
+         "http://nexus:8081/nexus/content/repositories/releases/com/premiumminds/test/renovate-pr-update-issue-13882-lib/maven-metadata.xml (GET)": 1,
+         "https://api.github.com/graphql (POST)": 4,
+         "https://api.github.com/repos/froque/renovate-pr-update-issue-13882/commits/06794981275302a9c74bb2b85ddb129503388ff1/statuses (GET)": 2,
+         "https://api.github.com/repos/froque/renovate-pr-update-issue-13882/commits/renovate/com.premiumminds.test-renovate-pr-update-issue-13882-lib-1.x/status (GET)": 1,
+         "https://api.github.com/repos/froque/renovate-pr-update-issue-13882/pulls (GET)": 1,
+         "https://api.github.com/repos/froque/renovate-pr-update-issue-13882/statuses/06794981275302a9c74bb2b85ddb129503388ff1 (POST)": 1
+       },
+       "hostStats": {
+         "nexus": {"requestCount": 5, "requestAvgMs": 7, "queueAvgMs": 0},
+         "api.github.com": {"requestCount": 9, "requestAvgMs": 375, "queueAvgMs": 0}
+       },
+       "totalRequests": 14
+ INFO: Repository finished (repository=froque/renovate-pr-update-issue-13882)
+       "durationMs": 9313
+DEBUG: Renovate exiting
