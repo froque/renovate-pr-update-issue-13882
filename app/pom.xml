@@ -17,7 +17,7 @@
     <dependency>
       <groupId>com.premiumminds.test</groupId>
       <artifactId>renovate-pr-update-issue-13882-lib</artifactId>
-      <version>1.0</version>
+      <version>1.2</version>
     </dependency>
   </dependencies>
 
