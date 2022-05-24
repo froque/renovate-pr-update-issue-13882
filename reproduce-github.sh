@@ -2,7 +2,7 @@
 
 docker run --rm -d -p 8081:8081 --name nexus sonatype/nexus:oss
 # admin:admin123
-#http://localhost:8082/nexus/#welcome
+#http://localhost:8081/nexus/#welcome
 
 GITHUB_COM_TOKEN=""
 
@@ -19,8 +19,8 @@ function deploy_lib {
   docker run -it \
       --rm \
       --link=nexus \
-      -v $(pwd)/:/opt/ \
-      -w /opt/ \
+      -v $(pwd)/:/opt/app/ \
+      -w /opt/app/ \
       maven \
         mvn --quiet --settings maven-settings.xml --file lib/pom.xml clean package install deploy
 }
@@ -30,8 +30,8 @@ function bump_version_lib {
   docker run -it \
       --rm \
       --link=nexus \
-      -v $(pwd)/:/opt/ \
-      -w /opt/ \
+      -v $(pwd)/:/opt/app/ \
+      -w /opt/app/ \
       maven \
         mvn --quiet --file lib/pom.xml versions:set -DnewVersion=$version -DgenerateBackupPoms=false
 }
